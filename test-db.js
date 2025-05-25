@@ -1,4 +1,8 @@
-import { JsonDB, Config } from 'node-json-db';
+// test-db.js
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { JsonDB, Config } = require('node-json-db');
+
 const db = new JsonDB(new Config('myDatabase', true, true, '/'));
 
 async function test() {

@@ -1,0 +1,12 @@
+appId: com.example.codewallet
+productName: Code Wallet
+directories:
+  buildResources: build
+  output: dist
+files:
+  - "**/*"
+  - "!node_modules/electron/*"
+  - "!node_modules/node-json-db/*"
+win:
+  target: nsis
+  icon: build/icon.ico
